@@ -43,7 +43,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     // trace: 'on-first-retry',
     // baseURL: 'https://www.saucedemo.com',
-    headless: true,
+    headless: false,
 
     baseURL: env.baseURL,
     actionTimeout: env.timeouts.action,
@@ -64,7 +64,7 @@ export default defineConfig({
       name: "chromium",
       use: { ...devices["Desktop Chrome"] },
     },
-/*
+
     {
       name: "firefox",
       use: { ...devices["Desktop Firefox"] },
@@ -74,7 +74,7 @@ export default defineConfig({
       name: "webkit",
       use: { ...devices["Desktop Safari"] },
     },
-*/
+
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
