@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "postinstall": "playwright install --with-deps",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "rimraf reports/allure-results reports/allure-report reports/html-report reports/json-report reports/junit-report test-results && playwright test",
